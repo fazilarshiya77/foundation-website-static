@@ -1,123 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate - The BeKindDoGood Foundation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/logo.png" alt="logo" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="what-we-do.html">What We Do</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-donate ms-2 active" href="donate.html">Donate</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="page-hero">
-        <div class="hero-overlay">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donate - The BeKindDoGood Foundation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-8">
-                        <h1 class="page-title">Make a Difference Today</h1>
-                        <p class="page-subtitle">Your donation helps us continue our mission of kindness</p>
-                    </div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/logo.png" alt="logo" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="what-we-do.html">What We Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-donate ms-2 active" href="donate.html">Donate</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="donation-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="donation-amounts">
-                        <h3 class="donation-title">Choose Your Donation Amount</h3>
-                        <div class="amount-buttons">
-                            <button class="btn btn-amount" data-amount="100">INR 100</button>
-                            <button class="btn btn-amount" data-amount="500">INR 500</button>
-                            <button class="btn btn-amount" data-amount="1000">INR 1000</button>
-                            <button class="btn btn-amount" data-amount="5000">INR 5000</button>
-                            <button class="btn btn-amount custom" data-amount="custom">Custom Amount</button>
+        </nav>
+        <section class="page-hero">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-8">
+                            <h1 class="page-title">Make a Difference Today</h1>
+                            <p class="page-subtitle">Your donation helps us continue our mission of kindness</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="donation-form-card">
-                        <h3 class="donation-title">Donation Details</h3>
-                        <form id="donationForm">
-                            <div class="mb-3">
-                                <label for="fullName" class="form-label">Full Name:</label>
-                                <input type="text" class="form-control" id="fullName" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email:</label>
-                                <input type="email" class="form-control" id="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="customAmount" class="form-label">Custom Amount (INR):</label>
-                                <input type="number" class="form-control" id="customAmount" min="1">
-                            </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="monthlyPayment">
-                                <label class="form-check-label" for="monthlyPayment">
-                                    Make this a monthly payment
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-donate-now">Donate Now</button>
-                        </form>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Contact Us</h5>
-                    <p>Email: info@thebekinddogoodfoundation.org</p>
-                    <p>Phone: +91 99728 22081</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <h5>Follow Us</h5>
-                    <div class="social-icons">
-                       <a href="#" class="social-icon"><img src="./assets/facebook.png" /></a>
-                        <a href="#" class="social-icon"><img src="./assets/twitter.png" /></a>
-                        <a href="#" class="social-icon"><img src="./assets/instagram.png" /></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="footer-divider">
-            <div class="text-center">
-                <p>&copy; 2025 The BeKindDoGood Foundation. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </section>
+       
+        <div class="header">
+  <h1>BeKindDoGood Foundation</h1>
+</div>
 
+<div class="hero">
+  <img src="hero.jpg" alt="Hero Image">
+</div>
+
+<div class="content-placeholder">
+  <h2>About Our Mission</h2>
+  <p>Content goes here...</p>
+</div>
+
+<!-- Donation Section -->
+<section class="donation-section">
+  <div class="container">
+    <div class="row">
+  <div class="container">
+ <div class="row align-items-start">
+      
+<section class="donation-section">
+  <!-- Left side: Bank Details -->
+ <div class="donation-left">
+  <h3 class="mb-2">DONATE TO</h3>
+  <h2 class="h4 fw-bold mb-3">THE BEKINDDOGOOD FOUNDATION</h2>
+
+  <ul class="list-unstyled mb-0">
+    <li><strong>Bank:</strong> AXIS BANK</li>
+    <li><strong>Account Name:</strong> BeKindDoGood Foundation</li>
+    <li><strong>Account Type:</strong> Current</li>
+    <li><strong>Account Number:</strong> 925020027583016</li>
+    <li><strong>IFSC Code:</strong> UTIB0003362</li>
+    <li><strong>MICR Code:</strong> 560211089</li>
+  </ul>
+</div>
+
+
+  <!-- Right side: Inquiry Form -->
+  <div class="donation-right">
+    <form>
+      <label>Your First Name*</label>
+      <input type="text" placeholder="Enter your first name" required />
+
+      <label>Your Email Address*</label>
+      <input type="email" placeholder="Enter your email address" required />
+
+      <label>Your Message*</label>
+      <textarea placeholder="Type your message here" required></textarea>
+
+      <button type="submit">Submit Your Inquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer w-100">
+  <div class="container-fluid px-4">
+    <div class="row align-items-center justify-content-between"> 
+
+      <!-- Left Side -->
+      <div class="col-md-6">
+        <h5>Contact Us</h5>
+        <p class="mb-1">Email: info@thebekinddogoodfoundation.org</p>
+        <p class="mb-0">Phone: +91 99728 22081</p>
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-md-6 text-md-end">
+        <h5>Follow Us</h5>
+        <div class="social-icons justify-content-md-end">
+          <a href="#" class="social-icon"><img src="./assets/facebook.png" /></a>
+          <a href="#" class="social-icon"><img src="./assets/twitter.png" /></a>
+          <a href="#" class="social-icon"><img src="./assets/instagram.png" /></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="text-center py-2">
+    <p class="mb-0"&copy; 2025 The BeKindDoGood Foundation. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>
+
+
